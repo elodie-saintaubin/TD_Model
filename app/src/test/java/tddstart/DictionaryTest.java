@@ -6,24 +6,21 @@ import static org.hamcrest.Matchers.*;
 
 public class DictionaryTest extends AppTest{
 
-    public static class Dictionary {
-        private String nom;
-        Dictionary(String nom){
-            this.nom = nom;
-        }
-        Dictionary(){
-            this.nom = "default";
-        }
-
-        public String getName(){
-            return "Example";
-        }
-
-    }
-
-    Dictionary dict = new Dictionary("Example");
+    Dictionary dict = new Dictionary("");
 
     @Test public void testDictionaryName() {
         assertThat(dict.getName(), equalTo("Example"));
     }
+
+    //@Test public void testOneTranslation() {
+      //  dict.addTranslation("contre", "against");
+        //assertThat(dict.getTranslation("contre"), equalsTo("against"));
+    //}
+
+    //7
+    @Test public void testIsEmpty() {
+        assertThat(dict.isEmpty(), equalTo(true));
+    }
+
+
 }
