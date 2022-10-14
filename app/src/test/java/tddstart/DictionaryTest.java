@@ -7,7 +7,7 @@ import static org.hamcrest.Matchers.*;
 public class DictionaryTest extends AppTest{
 
     public static class Dictionary {
-        String nom;
+        private String nom;
         Dictionary(String nom){
             this.nom = nom;
         }
