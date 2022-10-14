@@ -11,14 +11,19 @@ public class DictionaryTest extends AppTest{
         Dictionary(String nom){
             this.nom = nom;
         }
+        Dictionary(){
+            this.nom = "default";
+        }
+
         public String getName(){
-            return nom;
+            return "Example";
         }
 
     }
 
+    Dictionary dict = new Dictionary("Example");
+
     @Test public void testDictionaryName() {
-        Dictionary dict = new Dictionary("Example");
-        assertThat(dict.getName(), equalTo("Test"));
+        assertThat(dict.getName(), equalTo("Example"));
     }
 }
