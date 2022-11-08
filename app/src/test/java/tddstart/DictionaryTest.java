@@ -39,6 +39,7 @@ public class DictionaryTest extends AppTest{
     //Triangulation 4
     @Test public void testOneTranslation4() {
         assertThat(dict.getTranslation("contrre"), equalTo("against"));
+        assertThat(dict.getTranslation("pareil"), equalTo("same"));
 
     }
 

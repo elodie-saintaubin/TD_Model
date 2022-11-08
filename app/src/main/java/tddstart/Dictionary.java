@@ -6,6 +6,7 @@ import java.util.*;
 public class Dictionary {
     private String name;
 
+
     Dictionary(String nom){ this.name = nom;}
     Dictionary(){
         this.name = "default";
