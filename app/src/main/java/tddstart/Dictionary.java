@@ -7,7 +7,7 @@ public class Dictionary {
     private String name;
     private Map<String, String> translations = new HashMap<>();
 
-    private ArrayList<Map<String, String>> dictionnaire;
+    private ArrayList<Map<String, ArrayList<String>>> dictionnaire;
 
     Dictionary(String name){ this.name = name;}
     public Dictionary(){
@@ -18,7 +18,7 @@ public class Dictionary {
         this.translations = d;
     }
 
-    public Dictionary(ArrayList<Map<String, String>> d){
+    public Dictionary(ArrayList<Map<String, ArrayList<String>>> d){
         this.dictionnaire = d;
     }
 
